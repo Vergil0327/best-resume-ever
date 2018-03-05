@@ -84,7 +84,7 @@
           <span>{{skill.name}}&nbsp;</span>
           <div class="progress">
             <div class="determinate" :style="'width: '+skill.level+'%;'">
-              <i class="fa fa-circle"></i>
+              <!-- <i class="fa fa-circle"></i> -->
             </div>
           </div>
         </div>
@@ -93,11 +93,17 @@
   </div>
 
   <div class="rightCol">
-    <div class="title">
-      <h2>{{person.name.first}} {{person.name.middle}} {{person.name.last}}</h2>
-      <div>{{person.position}}</div>
+    <div ref="title" class="title">
+      <h2 ref="title_h2">{{person.name.first}} {{person.name.middle}} {{person.name.last}}</h2>
+      <span ref="title_span" :style="titleSpanClass">{{person.position}}</span>
     </div>
 
+    <div class="section-headline">{{ lang.about }}</div>
+    <div class="block">
+      <p>
+        {{ person.about }}
+      </p>
+    </div>
     <div class="section-headline">{{ lang.experience }}</div>
     <div class="block" v-for="experience in person.experience" :key="experience.company">
       <div class="block-helper"></div>
@@ -179,6 +185,30 @@ a {
     color:#16151c;
     color:rgba(63,61,60,0.71);
     display:block;
+    font-size:0.67em;
+    font-size:10pt;
+    -webkit-margin-before:2.33em;
+    -webkit-margin-start:0;
+    -webkit-margin-end:0;
+    padding-top:0;
+    text-transform:uppercase;
+    opacity:0.8;
+  }
+  span {
+    margin-top:-5px;
+    margin-top:0;
+    margin:0;
+    padding:0;
+    line-height:15pt;
+    font-weight:300;
+    font-weight:500;
+    letter-spacing:2px;
+    letter-spacing:3px;
+    color:white;
+    color:#16151c;
+    color:rgba(63,61,60,0.71);
+    display:block;
+    position: absolute;
     font-size:0.67em;
     font-size:10pt;
     -webkit-margin-before:2.33em;

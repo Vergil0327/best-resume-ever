@@ -13,7 +13,8 @@ function getVueOptions (name) {
     data () {
       return {
         person: yaml.load(PERSON),
-        terms: terms
+        terms: terms,
+        isMounted: false
       };
     },
     computed: {
@@ -30,7 +31,27 @@ function getVueOptions (name) {
           });
 
         return useLang;
+      },
+
+      titleSpanClass () {
+        if (!this.isMounted) return {};
+
+        const titleH2Height = this.$refs.title_h2.clientHeight;
+        const halfTitleH2Height = titleH2Height / 2;
+        const selfHeight = this.$refs.title_span.clientHeight;
+
+        // Resize height of Dom of class:title
+        const titleDomHeight = this.$refs.title.clientHeight - (halfTitleH2Height + selfHeight);
+        this.$refs.title.style.height = `${titleDomHeight}px`;
+
+        return {
+          position: 'relative',
+          top: `-${halfTitleH2Height + selfHeight}px`
+        };
       }
+    },
+    mounted () {
+      this.isMounted = true;
     }
   };
   return opt;
