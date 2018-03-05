@@ -243,7 +243,7 @@ a {
   opacity:0.8;
   margin-left:20px;
   margin-top:40px;
-  margin-bottom:20px;
+  margin-bottom:5px;
   color:#3f3d3c;
 }
 .c {
