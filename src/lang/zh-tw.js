@@ -4,6 +4,6 @@ const lang = {
   education: '學歷',
   skills: '技能專長',
   about: '自我介紹',
-  activities: '活動'
+  activities: '參與活動'
 };
 export default lang;
