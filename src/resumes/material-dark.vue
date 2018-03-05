@@ -14,6 +14,13 @@
       <div class="text">
         <ul>
           <li> {{ lang.born }} {{person.birth.year}} {{ lang.bornIn }} {{person.birth.location}}</li>
+          <br>
+          <li v-for="education in person.education" :key="education.degree">
+            <div>{{ education.timeperiod }}</div>
+            <div>{{ education.degree }}</div>
+            <div>{{ education.school }}</div>
+            <br>
+          </li>
         </ul>
       </div>
     </div>
@@ -113,14 +120,23 @@
           {{experience.description}}
         </p>
     </div>
-    <div class="section-headline">{{ lang.education }}</div>
+    <div class="section-headline">{{ lang.activities }}</div>
+    <div class="block" v-for="activity in person.activities" :key="activity.company">
+      <div class="block-helper"></div>
+      <h3 class="headline">{{activity.name}}</h3>
+        <div class="subheadline">{{activity.timeperiod}}</div>
+        <p class="info">
+          {{activity.description}}
+        </p>
+    </div>
+    <!-- <div class="section-headline">{{ lang.education }}</div>
     <div class="block" v-for="education in person.education" :key="education.degree">
       <div class="block-helper"></div>
       <div class="headline">{{education.degree}}</div>
       <p class="info">
         {{education.timeperiod}}, {{education.description}}
       </p>
-    </div>
+    </div> -->
   </div>
 
   <div style="clear:both;"></div>
@@ -284,7 +300,7 @@ h4 {
   opacity:1;
 }
 .rightCol {
-  width:63.5%;
+  width:53.5%;
   height:100%;
   float:right;
   display:flex;
@@ -362,7 +378,7 @@ h4 {
   }
 }
 .leftCol {
-  width:35%;
+  width:45%;
   height:100%;
   float:left;
   padding:0;
