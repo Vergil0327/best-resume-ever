@@ -116,8 +116,8 @@
       <div class="block-helper"></div>
       <h3 class="headline">{{experience.position}} - {{experience.company}}</h3>
         <div class="subheadline">{{experience.timeperiod}}</div>
-        <p class="info">
-          {{experience.description}}
+        <p class="info" v-html="experience.description">
+          <!-- {{experience.description}} -->
         </p>
     </div>
     <div class="section-headline">{{ lang.activities }}</div>

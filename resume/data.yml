@@ -13,10 +13,14 @@ birth:
   location: Taichung City
 
 experience:
-- company: Company A
-  position: Developer
-  timeperiod: since January 2016
-  description: Programming and watching cute cat videos.
+- company: BRANDMA.CO LIMITED
+  position: Web Developer
+  timeperiod: since May 2017
+  description: '
+  導入Vue.js, Eslint <br /> 
+  重構/改寫後端核心邏輯 (Backend: Node.js/Express, MongoDB/Native Node Driver) <br /> 
+  推廣Concepts of Clean Code & Functional Programming <br />
+  技術分享(GraphQL, Storybook, Flow, RxJS, ...)'
 
 education:
 - degree: M.S., Dept of Chemical Engineering
@@ -30,14 +34,14 @@ education:
   description: ''
 
 activities:
-  - name: JSDC 2017
-    timeperiod: ''
+  - name: JSDC
+    timeperiod: '2017'
     description: ''
   - name: GraphQL Meetup
-    timeperiod: ''
+    timeperiod: '2017'
     description: ''
-  - name: Fishackathon 2018
-    timeperiod: ''
+  - name: Fishackathon
+    timeperiod: '2018'
     description: 'test...'
 
 # skill level goes 0 to 100
