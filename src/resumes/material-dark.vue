@@ -486,6 +486,8 @@ h4 {
 }
 #myselfpic {
   background-image:url('../../resume/id.jpg');
+  background-size: 95.5%;
+  background-position: 50% 12.5%;
   color:black;
 }
 #githubIcon {
