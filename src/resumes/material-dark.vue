@@ -107,9 +107,7 @@
 
     <div class="section-headline">{{ lang.about }}</div>
     <div class="block">
-      <p>
-        {{ person.about }}
-      </p>
+      <p v-html="person.about"></p>
     </div>
     <div class="section-headline">{{ lang.experience }}</div>
     <div class="block" v-for="experience in person.experience" :key="experience.company">
@@ -309,7 +307,7 @@ h4 {
     width:90%;
     position:relative;
     background-color:#ffffff;
-    padding:20px;
+    padding:16px;
     margin-top:5px;
     margin-bottom:5px;
     display:inline-block;

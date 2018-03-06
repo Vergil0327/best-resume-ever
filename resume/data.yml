@@ -3,9 +3,11 @@ name:
   first: 王柏中
   middle:
   last: 
-about: Hi, my name is John Doe. I"m just about the most boring type of person you could
-       possibly imagine. I like collecting leaves from the tree in my back yard and documenting
-       each time I eat a peanut that is non-uniform. I am not a robot. Please hire me.
+about: 嗨!我叫王柏中，個性較靜但熟了之後會侃侃而談，在看完CS50後對軟體開發產生興趣而投入此行業．
+       在上一家公司主要使用Bootstrap, jQuery, Vue, Node.js, MongoDB，曾負責後端系統核心架構的改寫與重構，
+       將許多代碼從Callback Hell走向Promise & Async/Await，同時致力於寫出高品質代碼與導入適合公司產品開發的技術(如Vue.js)．
+       <br />閒暇時間喜歡攝影或透過Medium、Hackernoon及灣區日報獲得新知，喜歡了解新技術的設計理念、優缺點及這項技術背後是透過何種方式來解決問題．
+       最近正在看PWA、RxJS、Golang與Functional Programming(FP)相關文章，也喜歡與人討論各項技術，歡迎大家加我Facebook一同討論!
 position: Software Developer
 
 birth:
@@ -18,8 +20,7 @@ experience:
   timeperiod: since May 2017
   description: 導入Vue.js, Eslint <br /> 
                重構/改寫後端核心邏輯與架構 <br /> 
-               推廣Concepts of Clean Code & Code Review <br />
-               技術分享(GraphQL, Storybook, Flow, RxJS, FP...)
+               技術分享(GraphQL, Storybook, Flow, RxJS, PWA, Function Programming...)
 
 education:
 - degree: M.S., Dept of Chemical Engineering
@@ -35,13 +36,13 @@ education:
 activities:
   - name: JavaScript Developer Conference (JSDC)
     timeperiod: 2017
-    description: 聽完大神們的演講後徹底的大開眼界，其中《RxJS - 封裝程式的藝術》是我見過最棒的RxJS演講!
+    description: ''
   - name: GraphQL Meetup
     timeperiod: 2017
-    description: 了解這項GraphQL這項技術的核心理念及未來可能的發展走向，個人認為很適合作為API的Query Language
+    description: 了解這項GraphQL這項技術的核心理念及未來可能的發展走向
   - name: Fishackathon
     timeperiod: 2018
-    description: 用Vue, Vuex, Vuetify撰寫前端頁面，產品目的為提供漁工獲得各類資訊的平台，通過初評並於最終輪刷掉
+    description: 用Vue, Vuex, Vuetify撰寫前端頁面，產品目的為提供漁工獲得各類資訊的平台，通過初評但在最後一輪被刷掉
 
 # skill level goes 0 to 100
 skills:
