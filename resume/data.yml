@@ -18,9 +18,10 @@ experience:
 - company: BRANDMA.CO LIMITED
   position: Web Developer
   timeperiod: since May 2017
-  description: 導入Vue.js, Eslint <br /> 
-               重構/改寫後端核心邏輯與架構 <br /> 
-               技術分享(GraphQL, Storybook, Flow, RxJS, PWA, Function Programming...)
+  description: '- 使用 jQuery, Vue, Vuex, Node.js, MongoDB <br />
+                - 導入Vue, Vuex, Eslint, 協助Node.js版本升級(從0.10.x -> 8.9) <br />
+                - 重構/改寫後端核心邏輯與架構 <br />
+                - 知識分享(GraphQL, Storybook, Flow, RxJS, PWA, Function Programming...)'
 
 education:
 - degree: M.S., Dept of Chemical Engineering
@@ -39,10 +40,10 @@ activities:
     description: ''
   - name: GraphQL Meetup
     timeperiod: 2017
-    description: 了解這項GraphQL這項技術的核心理念及未來可能的發展走向
+    description: 
   - name: Fishackathon
     timeperiod: 2018
-    description: 用Vue, Vuex, Vuetify撰寫前端頁面，產品目的為提供漁工獲得各類資訊的平台，通過初評但在最後一輪被刷掉
+    description: 用Vue, Vuex, Vuetify撰寫前端頁面，主題為提供漁工獲得各類資訊並與專業人士互相媒合的平台，通過初評但在最後一輪被刷掉
 
 # skill level goes 0 to 100
 skills:
